@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"        
+	    android:layout_width="fill_parent"  
+	    android:orientation="vertical"  
+	    android:layout_height="fill_parent"
+		tools:context=".MainActivity" >
+
+    
+    	<RelativeLayout android:id="@+id/AddHint"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/start_herebg"
+	        android:padding="5dip" >    	
+			    <ImageView
+			        android:id="@+id/AddHintImage"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_starthere"
+					android:layout_alignParentRight="true" 
+					android:paddingRight="65dip"
+					android:paddingLeft="10dip" />
+
+			    <TextView
+			        android:id="@+id/AddHintText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_toLeftOf="@+id/AddHintImage"
+			        android:text="Add a new work shift" 
+					android:paddingTop="10dip" 
+					android:paddingBottom="5dip"  
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+		</RelativeLayout>  
+		
+    	
+    
+    
+   	<RelativeLayout android:id="@+id/ViewWeekDataOuter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+	    android:background="@drawable/databgouter"
+	    android:clickable="true"
+        android:padding="0dip" > 
+   	<RelativeLayout android:id="@+id/ViewWeekData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+	    android:background="@drawable/databg"
+        android:paddingTop="10dip"
+        android:paddingLeft="5dip"> 
+	         
+    	<RelativeLayout android:id="@+id/ViewWeekCalendar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="7dip" >  
+    	
+			    <ImageView
+			        android:id="@+id/ic_calendar"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_calendar"
+					android:layout_alignParentLeft="true" 
+					android:paddingRight="20dip"/>
+			    <TextView
+			        android:id="@+id/WeekDates"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Dec 12 2012  -  Dec 18 2012" 
+		        	android:layout_toRightOf="@+id/ic_calendar" 
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+			    
+		</RelativeLayout>  
+    	
+    	<RelativeLayout android:id="@+id/ViewWeekHours"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+		    android:layout_below="@id/ViewWeekCalendar"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="7dip">  
+			    <ImageView
+			        android:id="@+id/ic_clock"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_clock"
+					android:layout_alignParentLeft="true" 
+					android:paddingRight="20dip"/>
+			    <TextView
+			        android:id="@+id/WeekHours"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+		        	android:layout_toRightOf="@+id/ic_clock" 
+			        android:text="30.8 hours" 
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+    	
+		</RelativeLayout>  
+    	<RelativeLayout android:id="@+id/ViewWeekNotes"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+		    android:layout_below="@id/ViewWeekHours"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="7dip" >  
+			     <ImageView
+			        android:id="@+id/ic_notes"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_notes"
+					android:layout_alignParentLeft="true" 
+					android:paddingRight="20dip"/>
+			    <TextView
+			        android:id="@+id/WeekNotes"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+		        	android:layout_toRightOf="@+id/ic_notes" 
+			        android:text="This is some test notes just to show how notes will look in this little box right here, oh yeah!!!" 
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+			    
+		</RelativeLayout>  
+	</RelativeLayout>  
+	</RelativeLayout>  
+		
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    
+	<ListView
+		android:id="@+id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+
+</LinearLayout>

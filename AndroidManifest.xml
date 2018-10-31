@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.splitv.railtime"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.tlc" >
+        <activity
+            android:name="com.splitv.railtime.RailTime"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.AddWeek"
+            android:label="@string/add_week" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.RecieveCount"
+            android:label="@string/recieveCountActivity" 
+            android:noHistory="true">
+
+    		<intent-filter>
+        		<action android:name="android.intent.action.SEND"/>
+        		<category android:name="android.intent.category.DEFAULT"/>
+        		<data android:mimeType="text/plain"/>
+    		</intent-filter>
+            
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.ViewWeek"
+            android:label="@string/title_activity_view_week" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.PreferencesActivity"
+            android:label="@string/menu_settings" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.AddShift"
+            android:label="@string/title_activity_add_shift"
+            android:parentActivityName="com.actionbarsherlock.app.SherlockFragmentActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.actionbarsherlock.app.SherlockFragmentActivity" />
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.ViewShift"
+            android:label="@string/title_activity_view_shift" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.EditWeek"
+            android:label="@string/title_activity_edit_week" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.EditShift"
+            android:label="@string/title_activity_edit_shift" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.AddActivityRail"
+            android:label="@string/title_activity_add_activity_rail" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.EditActivityRail"
+            android:label="@string/title_activity_edit_activity_rail" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.AddActivityDz"
+            android:label="@string/title_activity_add_activity_dz" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.EditActivityDz"
+            android:label="@string/title_activity_edit_activity_dz" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.AddActivityMisc"
+            android:label="@string/title_activity_add_activity_misc" >
+        </activity>
+        <activity
+            android:name="com.splitv.railtime.EditActivityMisc"
+            android:label="@string/title_activity_edit_activity_misc" >
+        </activity>
+    </application>
+
+</manifest>

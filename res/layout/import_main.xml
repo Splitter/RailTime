@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"        
+	    android:layout_width="fill_parent"  
+	    android:orientation="vertical"  
+	    android:layout_height="fill_parent"
+		tools:context=".MainActivity" >
+
+    	<RelativeLayout android:id="@+id/AddHint"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/start_herebg"
+	        android:padding="5dip" >    	
+
+			    <TextView
+			        android:id="@+id/AddHintText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerHorizontal="true"
+            		android:layout_alignParentTop="true" 
+            		android:gravity="center_horizontal"
+           			android:minWidth="110sp"
+			        android:textStyle="bold"
+			        android:text="" 
+					android:paddingTop="10dip" 
+					android:paddingBottom="5dip"  
+					android:textColor="#FFFFFF" 
+			        android:textSize="15dip" />
+		</RelativeLayout>
+
+			    <Button
+    				android:id="@+id/AddNewShift"
+    				android:layout_below="@+id/AddHint"
+    				android:layout_width="fill_parent"
+    				android:layout_height="wrap_content" 
+    				android:layout_margin="5dp"
+    				android:text="Add New Shift"
+					android:textColor="#111111" 
+    				android:drawableLeft="@drawable/ic_add2"
+   					android:textSize="24sp"/>
+	<ListView
+		android:id="@+id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/listbg_styles"
+	android:orientation="horizontal"
+	android:layout_margin="0dip"
+	android:id="@+id/shift_activity_view_misc"   
+	android:padding="15dip" >
+		<ImageView
+		       android:id="@+id/cal_img"   
+		       android:layout_width="43dip"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_misc2"
+			android:layout_alignParentLeft="true"
+			android:paddingRight="15dip" />
+		  	<TextView
+		       android:id="@+id/unitsm"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text="Stuck in DZ for 2 hours"
+		       android:textColor="#565656"       
+		       android:layout_toRightOf="@+id/cal_img"  	
+		       android:textSize="15dip"/>	      
+		       
+		   <TextView
+		        android:id="@+id/blank2"
+		    	android:layout_below="@+id/cal_img" 
+		        android:layout_width="43dip"
+		        android:layout_height="wrap_content"
+		        android:text=""
+		        android:textColor="#565656"       
+				android:layout_alignParentLeft="true"
+				android:paddingRight="15dip" 
+		        android:textSize="15dip"/>    
+		   <TextView
+		        android:id="@+id/hoursWeekmisc"   
+		        android:layout_toRightOf="@+id/blank2"  
+		    	android:layout_below="@+id/cal_img" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#757575"        
+		        android:text="2.8588"
+		        android:textSize="13dip"/>	    
+		   <TextView
+		        android:id="@+id/hoursText"    
+		        android:layout_toRightOf="@+id/hoursWeekmisc"   
+		    	android:layout_below="@+id/cal_img" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="  hours"
+		        android:textColor="#757575"        
+		        android:textSize="13dip"
+				android:paddingLeft="6dip" />	    
+		<ImageView
+		        android:id="@+id/arrow_img"   
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_arrow"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"/>
+</RelativeLayout>
+
+
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/listbg_styles"
+	android:orientation="horizontal"
+	android:layout_margin="0dip"
+	android:id="@+id/shift_activity_view_rail"   
+	android:padding="15dip" >
+	<ImageView
+	       android:id="@+id/cal_img"   
+	       android:layout_width="43dip"
+		android:layout_height="wrap_content"
+		android:src="@drawable/ic_train2"
+		android:layout_alignParentLeft="true"
+		android:paddingRight="15dip" />
+	  	<TextView
+	       android:id="@+id/units"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="59 units"
+	       android:textColor="#565656"       
+	       android:layout_toRightOf="@+id/cal_img"  	
+	       android:textSize="15dip"/>	    	
+	  	<TextView
+	       android:id="@+id/dash2"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="  -  "
+	       android:textColor="#565656"        
+	       android:layout_toRightOf="@+id/units"  
+	       android:textSize="15dip"/>	  
+	          	    
+	  	<TextView
+	       android:id="@+id/loaders"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:text="6 loaders"
+	       android:textColor="#565656"       
+	       android:layout_toRightOf="@+id/dash2"  	
+	       android:textSize="15dip"/>	  
+	       
+	   <TextView
+	        android:id="@+id/track"
+	    	android:layout_below="@+id/cal_img" 
+	        android:layout_width="43dip"
+	        android:layout_height="wrap_content"
+	        android:text="# 22"
+	        android:textColor="#565656"       
+			android:layout_alignParentLeft="true"
+			android:paddingRight="15dip" 
+	        android:textSize="14dip"/>    
+	   <TextView
+	        android:id="@+id/hoursRail"   
+	        android:layout_toRightOf="@+id/track"  
+	    	android:layout_below="@+id/cal_img" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#757575"        
+	        android:text="2.8588"
+	        android:textSize="13dip"/>	    
+	   <TextView
+	        android:id="@+id/hoursRailText"    
+	        android:layout_toRightOf="@+id/hoursRail"   
+	    	android:layout_below="@+id/cal_img" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="  hours"
+	        android:textColor="#757575"        
+	        android:textSize="13dip"
+			android:paddingLeft="6dip" />	    
+	<ImageView
+	        android:id="@+id/arrow_img"   
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_arrow"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"/>
+</RelativeLayout>
+
+
+<RelativeLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/listbg_styles"
+	android:orientation="horizontal"
+	android:layout_margin="0dip"
+	android:id="@+id/shift_activity_view_dz"   
+	android:padding="15dip" >
+		<ImageView
+	        android:id="@+id/cal_img"   
+	        android:layout_width="43dip"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_car2"
+			android:layout_alignParentLeft="true"
+			android:paddingRight="15dip" />
+	   	<TextView
+	        android:id="@+id/unitsd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="142 Tickets"
+	        android:textColor="#565656"       
+	        android:layout_toRightOf="@+id/cal_img"  	
+	        android:textSize="15dip"/>	      
+	        
+	    <TextView
+		        android:id="@+id/blank"
+		    	android:layout_below="@+id/cal_img" 
+		        android:layout_width="43dip"
+		        android:layout_height="wrap_content"
+		        android:text=""
+		        android:textColor="#565656"       
+				android:layout_alignParentLeft="true"
+				android:paddingRight="15dip" 
+		        android:textSize="15dip"/>    
+	    <TextView
+		        android:id="@+id/hoursWeekdz"   
+		        android:layout_toRightOf="@+id/blank"  
+		    	android:layout_below="@+id/cal_img" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#757575"        
+		        android:text="2.8588"
+		        android:textSize="13dip"/>	    
+	    <TextView
+		        android:id="@+id/hoursText"    
+		        android:layout_toRightOf="@+id/hoursWeekdz"   
+		    	android:layout_below="@+id/cal_img" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="  hours"
+		        android:textColor="#757575"        
+		        android:textSize="13dip"
+				android:paddingLeft="6dip" />	    
+		<ImageView
+		        android:id="@+id/arrow_img"   
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_arrow"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"/>
+</RelativeLayout>
+</RelativeLayout>
+ 

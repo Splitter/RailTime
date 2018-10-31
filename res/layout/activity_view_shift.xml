@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"        
+	    android:layout_width="fill_parent"  
+	    android:orientation="vertical"  
+	    android:layout_height="fill_parent"
+    tools:context=".ViewShift" >
+
+
+    
+    	<RelativeLayout android:id="@+id/AddHint"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:background="@drawable/start_herebg"
+	        android:padding="5dip" >    	
+			    <ImageView
+			        android:id="@+id/AddHintImage"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_starthere"
+					android:layout_alignParentRight="true" 
+					android:paddingRight="65dip"
+					android:paddingLeft="10dip" />
+
+			    <TextView
+			        android:id="@+id/AddHintText"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_toLeftOf="@+id/AddHintImage"
+			        android:text="@string/view_shift_hint" 
+					android:paddingTop="10dip" 
+					android:paddingBottom="5dip"  
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+		</RelativeLayout>  
+		
+    	
+    
+    
+   	<RelativeLayout android:id="@+id/ViewShiftDataOuter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+	    android:background="@drawable/databgouter"
+	    android:clickable="true"
+        android:padding="0dip" > 
+   	<RelativeLayout android:id="@+id/ViewShiftData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+	    android:background="@drawable/databg"
+        android:paddingTop="10dip"
+        android:paddingLeft="5dip"> 
+	         
+    	<RelativeLayout android:id="@+id/ViewShiftCalendar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="7dip" >  
+    	
+			    <ImageView
+			        android:id="@+id/ic_clock1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_clock"
+					android:layout_alignParentLeft="true" 
+					android:paddingRight="20dip"/>
+			    <TextView
+			        android:id="@+id/ShiftStart"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/view_shift_start_text" 
+		        	android:layout_toRightOf="@+id/ic_clock1" 
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+			    
+			    <EditText 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/starttime" 
+			    	android:hint="@string/view_shift_time_hint" 
+		        	android:layout_toRightOf="@+id/ShiftStart" 
+			        android:inputType="none"
+					android:focusable="false"
+			        android:textSize="15dip"
+					android:paddingTop="0dip"
+			        android:layout_margin="0dp"/>  
+			    
+		</RelativeLayout>  
+    	
+    	<RelativeLayout android:id="@+id/ViewShiftHours"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+		    android:layout_below="@id/ViewShiftCalendar"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="7dip">  
+			    <ImageView
+			        android:id="@+id/ic_clock2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_clock"
+					android:layout_alignParentLeft="true" 
+					android:paddingRight="20dip"/>
+			    <TextView
+			        android:id="@+id/ShiftEnd"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+		        	android:layout_toRightOf="@+id/ic_clock2" 
+			        android:text="@string/view_shift_end_text" 
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+			    
+			    <EditText 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:id="@+id/endtime" 
+			    	android:hint="@string/view_shift_time_hint" 
+		        	android:layout_toRightOf="@+id/ShiftEnd" 
+			        android:inputType="none"
+					android:focusable="false"
+			        android:textSize="15dip"
+					android:paddingTop="0dip"
+			        android:layout_margin="0dp"/>  
+    	
+		</RelativeLayout>  
+		
+    	    	
+    	<RelativeLayout android:id="@+id/ViewCurHours"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+		    android:layout_below="@id/ViewShiftHours"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="7dip">  
+			    <ImageView
+			        android:id="@+id/ic_clock3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_clock"
+					android:layout_alignParentLeft="true" 
+					android:paddingRight="20dip"/>
+			    <TextView
+			        android:id="@+id/ShiftCurHours"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+		        	android:layout_toRightOf="@+id/ic_clock3" 
+			        android:text="Total Hours: " 
+					android:textColor="#151515" 
+			        android:textSize="15dip" 
+					android:paddingRight="5dip" />
+			    <TextView
+			        android:id="@+id/ShiftTotalHours"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+		        	android:layout_toRightOf="@+id/ShiftCurHours" 
+			        android:text="30.8 hours" 
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+    	
+		</RelativeLayout>  
+		
+    	
+    	
+    	<RelativeLayout android:id="@+id/ViewShiftNotes"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+		    android:layout_below="@id/ViewCurHours"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="15dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="7dip" >  
+			     <ImageView
+			        android:id="@+id/ic_notes"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/ic_notes"
+					android:layout_alignParentLeft="true" 
+					android:paddingRight="20dip"/>
+			    <TextView
+			        android:id="@+id/WeekNotes"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+		        	android:layout_toRightOf="@+id/ic_notes" 
+			        android:text="n/a" 
+					android:textColor="#151515" 
+			        android:textSize="15dip" />
+			    
+		</RelativeLayout> 
+		 
+	</RelativeLayout>  
+	</RelativeLayout>  
+    
+	<ListView
+		android:id="@+id/rail_list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+
+</LinearLayout>

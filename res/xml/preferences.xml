@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:holo="http://schemas.android.com/apk/res-auto" >
+    
+    
+    <PreferenceCategory 
+        holo:title="@string/pref_start_cat_title"
+        holo:key="pref_start_category">      
+    
+	    <com.splitv.railtime.TimePreference
+	        holo:key="pref_start_time"
+	        holo:title="@string/pref_start_title"/>    
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        holo:title="@string/pref_dz_cat_title"
+        holo:key="pref_dz_category">        
+        <CheckBoxPreference 
+            holo:key="pref_dz_enabled"
+            holo:title="@string/pref_dz_summary" 
+            holo:defaultValue="true"
+        />        
+        <EditTextPreference
+                holo:summary="@string/pref_dz_upm_summary"
+                holo:defaultValue="14.5"
+                holo:title="@string/pref_dz_upm_title"
+            	holo:dependency="pref_dz_enabled"
+                holo:key="pref_dz_upm" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        holo:title="@string/pref_rail_cat_title"
+        holo:key="pref_rail_category">        
+        <CheckBoxPreference 
+            holo:key="pref_rail_enabled"
+            holo:title="@string/pref_rail_summary" 
+            holo:defaultValue="true"
+        />        
+        <EditTextPreference
+                holo:summary="@string/pref_rail_upm_summary"
+                holo:defaultValue="7"
+                holo:title="@string/pref_rail_upm_title"
+            	holo:dependency="pref_rail_enabled"
+                holo:key="pref_rail_upm" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>

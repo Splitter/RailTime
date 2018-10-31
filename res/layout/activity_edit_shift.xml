@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:holo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:scrollbars="vertical">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"        
+	    android:layout_width="fill_parent"  
+	    android:orientation="vertical"  
+	    android:layout_height="fill_parent"  
+		android:descendantFocusability="beforeDescendants"
+		android:focusableInTouchMode="true" 
+	    tools:context=".AddShift" >
+	    
+		<TextView  
+		    android:id="@+id/AddShiftTypesTitle"  
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:text="@string/add_shift_types"   
+		    android:textSize="10pt" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginLeft="15dp"/>  
+	    
+		<Spinner
+		    android:id="@+id/EditShiftTypes"  
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:drawSelectorOnTop="true"
+			android:entries="@array/shift_types"   
+		    android:textSize="10pt" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginLeft="15dp" />
+		
+		
+		<TextView  
+		    android:id="@+id/ShiftDateTitle"  
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:text="@string/shift_date_title"  
+		    android:textSize="10pt" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginLeft="15dp"/>  
+	    <EditText 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/shift_date" 
+	    	android:hint="@string/shift_date_hint" 
+	        android:layout_alignParentRight="true"
+	        android:drawableRight="@drawable/ic_weekcalendar"
+	        android:inputType="none"
+			android:focusable="false"
+	        android:paddingTop="10dp"
+	        android:layout_margin="15dp"/>  
+	        
+	    
+		<TextView  
+		    android:id="@+id/additional_notes_title"  
+		    android:layout_width="wrap_content"  
+		    android:layout_height="wrap_content"  
+		    android:text="@string/additional_notes"  
+		    android:textSize="10pt" 
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginLeft="15dp"/> 
+	        
+		
+		<EditText  
+		    android:id="@+id/additional_notes"  
+		    android:layout_height="wrap_content"  
+		    android:hint="@string/additional_notes_shift_hint"  
+		    android:inputType="textMultiLine"  
+		    android:lines="5"  
+		    android:layout_width="fill_parent"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+	        android:paddingTop="10dp"
+	        android:layout_margin="15dp"/>  
+
+	</LinearLayout>
+ 
+</ScrollView>  

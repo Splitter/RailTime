@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main App Activity -->
+    <string name="app_name">Rail Time</string>
+    <string name="hello_world">Testing Testing!</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="menu">Menu</string>
+    <string name="delete_all">Delete Everything</string>
+    <string name="delete_activity">Delete Activity</string>
+    <string name="delete_activity_dialog_message">Completely delete data for this activity?</string>
+    <string name="delete_all_dialog_message">Completely delete all data saved in this app?</string>
+    <string name="delete_all_success">All App data has been deleted successfully!</string>
+    <string name="delete_all_failed">Failed to delete all app data</string>
+
+    <!-- Preferences Screen -->
+    <string name="menu_settings">Preferences</string>
+    <string name="pref_start_cat_title">Default Start Time</string>
+    <string name="pref_start_title">Normal scheduled start time</string>
+    <string name="pref_dz_cat_title">Dropzone Incentive</string>
+    <string name="pref_dz_summary">Enable or Disable:</string>
+    <string name="pref_dz_upm_title">Dropzone UPM</string>
+    <string name="pref_dz_upm_summary">units per man per hour</string>
+    <string name="pref_rail_cat_title">Rail Loader Incentive</string>
+    <string name="pref_rail_summary">Enable or Disable:</string>
+    <string name="pref_rail_upm_title">Rail Loader UPM</string>
+    <string name="pref_rail_upm_summary">units per man per hour</string>
+
+    <!-- Add new week screen -->
+    <string name="add_week">Add New Week</string>
+    <string name="save_week">Save Week Data</string>
+    <string name="start_week_hint">Week Start Date:</string>
+    <string name="end_week_hint">Week End Date:</string>
+    <string name="additional_notes">Additional Notes:</string>
+    <string name="additional_notes_week_hint">Add any additional notes about the week here(eg. holidays, sick days, etc)</string>
+    <string name="saved_week_data">Week data saved successfully</string>
+    <string name="saved_week_data_failed">Failed to save week data</string>
+
+    <!-- View Week Screen -->
+    <string name="title_activity_view_week">ViewWeek</string>
+    <string name="delete_week">Delete This Week</string>
+    <string name="delete_week_dialog_message">Completely delete data for the week you are currently viewing?</string>
+    <string name="delete_week_success">Successfully deleted week data</string>
+    <string name="delete_week_failed">Failed to delete week data</string>
+
+    <!-- Edit Week Screen -->
+    <string name="edit_week">Edit This Week</string>
+    <string name="title_activity_edit_week">Edit Week</string>
+
+    <!-- Add Shift Screen -->
+    <string name="title_activity_add_shift">Add New Shift</string>
+    <string name="add_shift_save">Save New Shift</string>
+    <string name="add_shift_types">Shift Type:</string>
+    <string name="shift_date_title">Shift Date:</string>
+    <string name="shift_date_hint">Date you worked the shift</string>
+    <string name="additional_notes_shift_hint">Add any additional notes about the shift here</string>
+    <string name="saved_shift_data">Shift data saved successfully</string>
+    <string name="saved_shift_data_failed">Failed to save shift data</string>
+    <string name="title_activity_view_shift">ViewShift</string>
+
+    <!-- View Shift Screen -->
+    <string name="add_activity">Add a new activity</string>
+    <string name="edit_shift">Edit this shift</string>
+    <string name="delete_shift">Delete this shift</string>
+    <string name="delete_shift_success">Successfully deleted shift data</string>
+    <string name="delete_shift_failed">Failed to delete week data</string>
+    <string name="delete_shift_dialog_message">Completely delete data for the shift you are currently viewing?</string>
+    <string name="view_shift_hint">Add a new shift activity</string>
+    <string name="view_shift_start_text">Start Time:\u0020</string>
+    <string name="view_shift_time_hint">tap here to set...</string>
+    <string name="view_shift_end_text">End Time:\u0020\u0020\u0020</string>
+    <string name="title_activity_edit_shift">Edit Shift</string>
+    <string name="title_activity_add_railtrack">Rail Track </string>
+    <string name="title_activity_add_dropzone">Dropzone Time</string>
+    <string name="title_activity_add_misc">Misc. Activity</string>
+    <string name="shift_activity_rail">rail</string>
+    <string name="shift_activity_misc">misc</string>
+    <string name="shift_activity_dz">dz</string>
+
+    <!-- Add Rail Activity Screen -->
+    <string name="title_activity_add_activity_misc">Add Misc. Activity</string>
+    <string name="title_activity_edit_activity_misc">Edit Misc. Activity</string>
+    <string name="title_activity_add_activity_rail">New Rail Track</string>
+    <string name="title_activity_edit_activity_rail">Edit Rail Track</string>
+    <string name="title_activity_edit_activity_dz">Edit Time in DZ</string>
+    <string name="add_rail_save">Save New Track</string>
+    <string name="add_rail_track">Track Number:\u0020</string>
+    <string name="add_rail_track_hint">number of the track...</string>
+    <string name="add_rail_units">Unit Count:\u0020</string>
+    <string name="add_rail_units_hint">number of units loaded...</string>
+    <string name="add_dz_units_hint">number of units moved...</string>
+    <string name="add_rail_loaders">Loader Count:\u0020</string>
+    <string name="add_rail_loaders_hint">number of loaders on track...</string>
+    <string name="additional_notes_add_rail_hint">Add any additional notes about the track here</string>
+    <string name="additional_notes_add_dz_hint">Add any additional notes about time in dz here</string>
+    <string name="additional_notes_add_misc_hint">Details about the misc. activity(required)</string>
+    <string name="saved_rail_data">Activity data saved successfully</string>
+    <string name="saved_rail_data_failed">Failed to activity data</string>
+    <string name="add_rail_empty_fields">Must include Unit Count &amp; Loader Count</string>
+    <string name="add_activity_start_time">Start Time</string>
+    <string name="add_activity_start_hint">Time you start activity</string>
+    <string name="add_activity_end_time">End Time</string>
+    <string name="add_activity_end_hint">Time you ended activity</string>
+    <string name="title_activity_add_activity_dz">Time in Dropzone</string>
+    <string name="add_activity_notes_fail">Details field about activity is required</string>
+    <string name="misc_activity_details">Activity Details:</string>
+    
+    <!-- Time preference  -->
+    
+    <string name="set">Set</string>
+    <string name="cancel">Cancel</string>
+
+    
+    <!--  Recieve Count  -->
+    <string name="recieveCountActivity">Import Count</string>
+    <string name="recieveCountChooseWeek">Choose a work week to add count to</string>
+    <string name="recieveCountChooseShift">Choose a shift to add count to</string>
+    <string name="recieveCountNewWeek">Add a new work week</string>
+    <string name="recieveCountNewShift">Add a new work shift</string>
+    
+    
+</resources>

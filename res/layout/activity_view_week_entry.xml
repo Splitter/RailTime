@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/listbg_styles"
+		android:orientation="horizontal"
+		android:layout_margin="0dip"
+		android:padding="15dip" >
+			<ImageView
+		        android:id="@+id/cal_img"   
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_weekcalendar"
+				android:layout_alignParentLeft="true"
+				android:paddingRight="15dip" />
+	    	<TextView
+		        android:id="@+id/shiftDate"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Dec 4 2012"
+		        android:textColor="#565656"       
+		        android:layout_toRightOf="@+id/cal_img"  
+		        android:textSize="15dip"/>
+	    	<TextView
+		        android:id="@+id/dash"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="  -  "
+		        android:textColor="#565656"        
+		        android:layout_toRightOf="@+id/shiftDate"  
+		        android:textSize="15dip"/>	    	    
+	    	<TextView
+		        android:id="@+id/shiftType"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Dec 10 2012"
+		        android:textColor="#565656"       
+		        android:layout_toRightOf="@+id/dash"  	
+		        android:textSize="15dip"/>
+		<ImageView
+	        android:id="@+id/blank"   
+		    android:layout_below="@+id/cal_img" 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_blank"
+			android:layout_alignParentLeft="true"
+			android:paddingRight="15dip" />
+	    <TextView
+		        android:id="@+id/hoursWeek"   
+		        android:layout_toRightOf="@+id/blank"  
+		        android:layout_below="@+id/shiftDate" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#757575"        
+		        android:textSize="13dip"/>	    
+	    <TextView
+		        android:id="@+id/hoursText"    
+		        android:layout_toRightOf="@+id/hoursWeek"  
+		        android:layout_below="@+id/shiftDate" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="  hours"
+		        android:textColor="#757575"        
+		        android:textSize="13dip"
+				android:paddingLeft="6dip" />	    
+		<ImageView
+		        android:id="@+id/arrow_img"   
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_arrow"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
